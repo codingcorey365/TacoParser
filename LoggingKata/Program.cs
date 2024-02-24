@@ -12,6 +12,7 @@ namespace LoggingKata
 
         static void Main(string[] args)
         {
+            //teset
             // Objective: Find the two Taco Bells that are the farthest apart from one another.
             // Some of the TODO's are done for you to get you started. 
 
