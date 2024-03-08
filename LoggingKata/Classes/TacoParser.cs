@@ -30,11 +30,11 @@ namespace LoggingKata.Classes
             point.Longitude = longitude;
             point.Latitude = latitude;
 
-            var tacoBellClass = new TacoBell();
-            tacoBellClass.Location = point;
-            tacoBellClass.Name = CityOfTacoBell;
+            var tacoBell = new TacoBell();
+            tacoBell.Location = point;
+            tacoBell.Name = CityOfTacoBell;
 
-            return tacoBellClass;
+            return tacoBell;
         }
     }
 }

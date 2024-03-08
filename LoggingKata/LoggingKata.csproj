@@ -9,7 +9,7 @@
     <None Update="Taco_Bell-US-AL-Alabama.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="CSV Files\TacoBell-US-AL.csv">
+    <None Update="TacoBell-US-AL.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

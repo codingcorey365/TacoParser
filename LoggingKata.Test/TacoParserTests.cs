@@ -1,4 +1,4 @@
-using System;
+using LoggingKata.Classes;
 using Xunit;
 
 namespace LoggingKata.Test
