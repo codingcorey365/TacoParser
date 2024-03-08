@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LoggingKata.Interfaces;
+using LoggingKata.Struct;
 
-namespace LoggingKata
+namespace LoggingKata.Classes
 {
     public class TacoBell : ITrackable
     {
