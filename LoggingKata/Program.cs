@@ -25,33 +25,40 @@ namespace LoggingKata
 
             var locations = lines.Select(parser.Parse).ToArray();
 
+            // TODO: Create an Itrackable and set to null
             ITrackable storeLocationA = null;
             ITrackable storeLocationB = null;
 
 
             double distanceApart = 0;
 
+            // TODO: Make foreach loop for locations
             foreach (var locA in locations)
             {
                 GeoCoordinate corA = new GeoCoordinate();
 
+                // TODO: Set location for locA
                 corA.Latitude = locA.Location.Latitude;
                 corA.Longitude = locA.Location.Longitude;
 
+                // TODO: Make nested foreach loop for locations
                 foreach (var locB in locations)
                 {
                     GeoCoordinate corB = new GeoCoordinate();
 
+                    // TODO: Set location for locB
                     corB.Latitude = locB.Location.Latitude;
                     corB.Longitude = locB.Location.Longitude;
 
-
+                    // TODO: Compare distance of locA and locB
                     var newdistance = corA.GetDistanceTo(corB);
 
                     if (newdistance > distanceApart)
                     {
+                        // TODO: Update distance if greater than itself
                         distanceApart = newdistance;
 
+                        // TODO: Associate Store to location  
                         storeLocationA = locA;
                         storeLocationB = locB;
                     }
