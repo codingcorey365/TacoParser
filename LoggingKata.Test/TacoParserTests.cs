@@ -27,7 +27,7 @@ namespace LoggingKata.Test
         [InlineData("31.570771,-84.10353,Taco Bell Albany...", -84.10353)]
         [InlineData("31.597099,-84.176122,Taco Bell Albany...", -84.176122)]
         [InlineData("34.280205,-86.217115,Taco Bell Albertvill...", -86.217115)]
-        [InlineData("32.92496,-85.961342,Taco Bell Alexander Cit...", -85.961342)]          
+        [InlineData("32.92496,-85.961342,Taco Bell Alexander Cit...", -85.961342)]
         [InlineData("34.071477,-84.296345,Taco Bell Alpharett...", -84.296345)]
         [InlineData("34.047374,-84.223918,Taco Bell Alpharetta...", -84.223918)]
         [InlineData("34.039588,-84.283254,Taco Bell Alpharetta...", -84.283254)]
@@ -40,7 +40,7 @@ namespace LoggingKata.Test
         [InlineData("32.571331,-85.499655,Taco Bell Auburn...", -85.499655)]
         [InlineData("32.609135,-85.479907,Taco Bell Auburn...", -85.479907)]
         [InlineData("33.858498,-84.60189,Taco Bell Austel...", -84.60189)]
-        
+
         public void ShouldParseLongitude(string line, double expected)
         {
             // TODO:
@@ -51,19 +51,19 @@ namespace LoggingKata.Test
             // represents a TacoBell location
 
             //Arrange
-              var tacoParser = new TacoParser();
+            var tacoParser = new TacoParser();
 
             //Act
-              var actual = tacoParser.Parse(line).Location.Longitude;
-            
+            var actual = tacoParser.Parse(line).Location.Longitude;
+
             //Assert
-              Assert.Equal(expected, actual);
+            Assert.Equal(expected, actual);
         }
 
 
         // TODO:
         // Create a test called ShouldParseLatitude
-        
+
         [Theory]
         [InlineData("34.073638, -84.677017, Taco Bell Acwort...", 34.073638)]
         [InlineData("34.035985,-84.683302,Taco Bell Acworth...", 34.035985)]
@@ -97,13 +97,13 @@ namespace LoggingKata.Test
             // represents a TacoBell location
 
             //Arrange
-              var tacoParser = new TacoParser();
-            
-              //Act
-              var actual = tacoParser.Parse(line).Location.Latitude;
-            
-              //Assert
-              Assert.Equal(expected, actual);
+            var tacoParser = new TacoParser();
+
+            //Act
+            var actual = tacoParser.Parse(line).Location.Latitude;
+
+            //Assert
+            Assert.Equal(expected, actual);
         }
 
     }

@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="bin\Debug\net6.0\LoggingKata.deps.json" />
+    <Content Include="bin\Debug\net6.0\LoggingKata.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Taco_Bell-US-AL-Alabama.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -15,5 +20,17 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="GeoCoordinate.NetCore" Version="1.0.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1. test\" />
+    <Folder Include="bin\Debug\net6.0\CSV Files\" />
+    <Folder Include="bin\Release\net6.0\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0\GeoCoordinate.NetCore.dll" />
+    <None Include="bin\Debug\net6.0\LoggingKata.dll" />
+    <None Include="bin\Debug\net6.0\LoggingKata.exe" />
+    <None Include="bin\Debug\net6.0\LoggingKata.pdb" />
+    <None Include="bin\Debug\net6.0\TacoBell-US-AL.csv" />
   </ItemGroup>
 </Project>

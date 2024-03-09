@@ -26,9 +26,9 @@
 
 // Done
 
-   // Create a TacoBell class that conforms to ITrackable
-   // Create an instance of the TacoBell class
-   // Set the values of the class correctly (Name and Location)
+// Create a TacoBell class that conforms to ITrackable
+// Create an instance of the TacoBell class
+// Set the values of the class correctly (Name and Location)
 
 // Done
 // Return the instance of your TacoBell class, because it conforms to ITrackable

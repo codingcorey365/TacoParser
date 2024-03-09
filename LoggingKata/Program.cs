@@ -1,12 +1,10 @@
-using System;
 using GeoCoordinatePortable;
-using LoggingKata.Interfaces;
 using LoggingKata.Classes;
+using LoggingKata.Interfaces;
+using System;
 using System.IO;
 using System.Linq;
-using System.Reflection.Metadata;
-using System.Reflection.PortableExecutable;
-using System.Runtime.CompilerServices;
+
 
 namespace LoggingKata
 {
@@ -18,15 +16,15 @@ namespace LoggingKata
         static void Main(string[] args)
         {
             logger.LogInfo("Log initialized");
-            
+
             var lines = File.ReadAllLines(csvPath);
-            
+
             logger.LogInfo($"Lines: {lines[0]}");
-            
+
             var parser = new TacoParser();
 
             var locations = lines.Select(parser.Parse).ToArray();
-            
+
             ITrackable storeLocationA = null;
             ITrackable storeLocationB = null;
 
@@ -45,11 +43,11 @@ namespace LoggingKata
                     GeoCoordinate corB = new GeoCoordinate();
 
                     corB.Latitude = locB.Location.Latitude;
-                    corB.Longitude = locB.Location.Longitude; 
-                    
+                    corB.Longitude = locB.Location.Longitude;
+
 
                     var newdistance = corA.GetDistanceTo(corB);
-                    
+
                     if (newdistance > distanceApart)
                     {
                         distanceApart = newdistance;
@@ -61,6 +59,7 @@ namespace LoggingKata
                 }
             }
 
+            Console.WriteLine("test");
             Console.WriteLine(storeLocationA.Name);
             Console.WriteLine(storeLocationB.Name);
         }

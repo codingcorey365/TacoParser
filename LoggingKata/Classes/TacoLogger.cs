@@ -1,5 +1,5 @@
-﻿using System;
-using LoggingKata.Interfaces;
+﻿using LoggingKata.Interfaces;
+using System;
 
 namespace LoggingKata.Classes
 {
