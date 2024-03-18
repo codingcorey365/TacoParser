@@ -28,10 +28,7 @@ namespace LoggingKata
             // TODO: Create an Itrackable and set to null
             ITrackable storeLocationA = null;
             ITrackable storeLocationB = null;
-
-
-            double distanceApart = 0;
-
+            
             // TODO: Make foreach loop for locations
             foreach (var locA in locations)
             {
@@ -53,6 +50,9 @@ namespace LoggingKata
                     // TODO: Compare distance of locA and locB
                     var newdistance = corA.GetDistanceTo(corB);
 
+                    // TODO: Create a variable for distance
+                    double distanceApart = 0;
+
                     if (newdistance > distanceApart)
                     {
                         // TODO: Update distance if greater than itself
@@ -65,8 +65,6 @@ namespace LoggingKata
 
                 }
             }
-
-            Console.WriteLine("test");
             Console.WriteLine(storeLocationA.Name);
             Console.WriteLine(storeLocationB.Name);
         }
